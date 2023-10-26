@@ -1,13 +1,27 @@
+/* 小屏幕（小于等于 1280px */
+@media (max-width: 780px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+/* 中等屏幕（大于等于 1280px */
+@media (min-width:780px) {
+  html {
+    font-size: 200px;
+  }
+}
+
 body {
   background-color: #004098;
   color: #fff;
-  font-size: 14px;
+  font-size: 0.14rem;
   font-family: 'Quicksand', PingFang SC, sans-serif;
 }
 .header {
   position: relative;
   width: 100%;
-  height: 140px;
+  height: 1.4rem;
   background-image: url('./assets/pattern_top.svg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,10 +29,10 @@ body {
 }
 .header::before {
   position: absolute;
-  bottom: 40px;
+  bottom: 0.4rem;
   left: 50%;
-  width: 143px;
-  height: 25px;
+  width: 1.43rem;
+  height: 0.25rem;
   transform: translateX(-50%);
   content: "";
   background-image: url('./assets/cosmoslogo.svg');
@@ -27,55 +41,55 @@ body {
   background-position: center;
 }
 .title {
-  padding: 30px 52px 23px;
-  font-size: 20px;
-  line-height: 30px;
+  padding: 0.3rem 0.52rem 0.23rem;
+  font-size: 0.20rem;
+  line-height: 0.30rem;
 }
 .desc {
-  padding-bottom: 60px;
-  font-size: 20px;
+  padding-bottom: 0.60rem;
+  font-size: 0.20rem;
 }
 .email {
-  min-width: 260px;
-  height: 36px;
-  font-size: 20px;
-  margin-bottom: 39px;
+  min-width: 2.60rem;
+  height: 0.36rem;
+  font-size: 0.20rem;
+  margin-bottom: 0.39rem;
 }
 .email::placeholder {
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 0.20rem;
+  line-height: 0.20rem;
 }
 .submit-email {
-  margin-bottom: 66px;
-  height: 40px;
-  padding: 0 30px;
-  font-size: 14px;
-  line-height: 40px;
-  border-radius: 20px;
+  margin-bottom: 0.66rem;
+  height: 0.40rem;
+  padding: 0 0.30rem;
+  font-size: 0.14rem;
+  line-height: 0.40rem;
+  border-radius: 0.20rem;
 }
 
 .pic {
-  margin-bottom: 39px;
+  margin-bottom: 0.39rem;
   width: 100%;
 }
 .pic::before {
-  width: calc(100% - 66px);
+  width: calc(100% - 0.66rem);
 }
 .footer-contact {
-  padding-top: 49px;
-  padding-bottom: 12px;
-  font-size: 14px;
+  padding-top: 0.49rem;
+  padding-bottom: 0.12rem;
+  font-size: 0.14rem;
 }
 .footer-email {
-  padding-bottom: 68px;
-  height: 51px;
-  font-size: 20px;
+  padding-bottom: 0.68rem;
+  height: 0.51rem;
+  font-size: 0.20rem;
 }
 .footer-copyright {
-  padding-bottom: 27px;
-  font-size: 10px;
+  padding-bottom: 0.27rem;
+  font-size: 0.10rem;
   color: #E7ECEF;
 }
 .submit-result {
-  font-size: 20px;
+  font-size: 0.20rem;
 }
