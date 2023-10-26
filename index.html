@@ -1,9 +1,71 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>hello</title>
-    </head>
-    <body>
-        <h1>TEST</h1>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COSMOS-The Possibilities of Agri-tech</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="style390.css" media="screen and (max-width: 1280px)">
+  <link rel="stylesheet" href="style1280.css" media="screen and (min-width: 1280px)">
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+</head>
+<body>
+  <div class="cosmos">
+    <div class="header"></div>
+    <div class="title">
+      Farming intelligence for productivity, scalability, and sustainability.
+    </div>
+    <div class="desc">Coming soon...</div>
+    <input type="email" placeholder="Your email address" name="email" class="email">
+    <button class="submit-email">Notify me when COSMOS is ready</button>
+    <div class="pic"></div>
+    <div class="footer">
+      <div class="footer-contact">Contact</div>
+      <a class="footer-email" href="mailto:jiayang.li@bayer.com">jiayang.li@bayer.com</a>
+      <div class="footer-copyright">Copyright ©2023. COSMOS Ag</div>
+    </div>
+    <div class="submit-result" id="result"></div>
+  </div>
+
+  <script>
+    const resultEle = $('#result')
+    $('.submit-email').on('click', () => {
+      const email = $('input[name="email"]').val()
+      const reg = /^([a-zA-Z]|[0-9])(\w|\-)+@[a-zA-Z0-9]+\.([a-zA-Z]{2,4})$/
+      if (!reg.test(email)) {
+        resultEle.show()
+        resultEle.text('请检查邮箱格式!')
+        resultEle.css({ background: '#eb5757' });
+        setTimeout(() => {
+          resultEle.hide()
+        }, 2000)
+        return
+      }
+      $.ajax({
+        type: 'post',
+        url: "https://test.fcv-cn.cropscience.bayer.com.cn/fuxi/rtk/mail",
+        async: true,
+        contentType: "application/json",
+        dataType: "json",
+        data: JSON.stringify({mail: email}),
+        success: res => {
+          resultEle.show()
+          resultEle.text('保存成功!')
+          resultEle.css({ background: '#27ab5c' });
+          setTimeout(() => {
+            resultEle.hide()
+          }, 2000)
+        },
+        error: () => {
+          resultEle.show()
+          resultEle.text('保存失败，请重试!')
+          resultEle.css({ background: '#eb5757' });
+          setTimeout(() => {
+            resultEle.hide()
+          }, 2000)
+        },
+      })
+    })
+  </script>
+</body>
 </html>

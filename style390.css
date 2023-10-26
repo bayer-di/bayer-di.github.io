@@ -1,0 +1,81 @@
+body {
+  background-color: #004098;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Quicksand', PingFang SC, sans-serif;
+}
+.header {
+  position: relative;
+  width: 100%;
+  height: 140px;
+  background-image: url('./assets/pattern_top.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.header::before {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  width: 143px;
+  height: 25px;
+  transform: translateX(-50%);
+  content: "";
+  background-image: url('./assets/cosmoslogo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.title {
+  padding: 30px 52px 23px;
+  font-size: 20px;
+  line-height: 30px;
+}
+.desc {
+  padding-bottom: 60px;
+  font-size: 20px;
+}
+.email {
+  min-width: 260px;
+  height: 36px;
+  font-size: 20px;
+  margin-bottom: 39px;
+}
+.email::placeholder {
+  font-size: 20px;
+  line-height: 20px;
+}
+.submit-email {
+  margin-bottom: 66px;
+  height: 40px;
+  padding: 0 30px;
+  font-size: 14px;
+  line-height: 40px;
+  border-radius: 20px;
+}
+
+.pic {
+  margin-bottom: 39px;
+  width: 100%;
+}
+.pic::before {
+  width: calc(100% - 66px);
+}
+.footer-contact {
+  padding-top: 49px;
+  padding-bottom: 12px;
+  font-size: 14px;
+}
+.footer-email {
+  padding-bottom: 68px;
+  height: 51px;
+  font-size: 20px;
+}
+.footer-copyright {
+  padding-bottom: 27px;
+  font-size: 10px;
+  color: #E7ECEF;
+}
+.submit-result {
+  font-size: 20px;
+}

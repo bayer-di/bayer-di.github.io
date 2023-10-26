@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'Quicksand';
+  src: url('quicksand/to/Quicksand-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Quicksand';
+  src: url('quicksand/to/Quicksand-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Quicksand';
+  src: url('quicksand/to/Quicksand-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Quicksand';
+  src: url('quicksand/to/Quicksand-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Quicksand';
+  src: url('quicksand/to/Quicksand-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  background-color: #004098;
+  color: #fff;
+  font-family: 'Quicksand', PingFang SC, sans-serif;
+}
+.cosmos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  font-weight: 600;
+  text-align: center;
+}
+.desc {
+  color: #4FA147;
+  font-weight: 600;
+}
+.email {
+  background:none;
+  outline:none;
+  border:none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  text-align: center;
+}
+.email::placeholder {
+  color: rgba(255, 255, 255, 0.20);
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+}
+.submit-email {
+  border:0;
+	outline:none;
+  background-color: transparent;
+  background: #4FA147;
+  color: #fff;
+  text-align: center;
+}
+.pic {
+  position: relative;
+  padding-bottom: 65%;
+  text-align: center;
+  background-image: url('./assets/rows-cucumbers-grown-greenhouse-web.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.pic::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  content: "COSMOS is a digital agriculture venture incubated by Bayer since 2020. Based in China and Europe, COSMOS has a multi-disciplinary team of crop scientists, data scientists, product managers, growers and engineers.";
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  background-image: url('./assets/pattern_bottom.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.footer-email {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.submit-result {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 5px 30px;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  /* background-color: rgba(255, 255, 255, 0.20); */
+  color: #fff;
+  border-radius: 40px;
+}
