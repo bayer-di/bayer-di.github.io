@@ -91,5 +91,6 @@ body {
   color: #E7ECEF;
 }
 .submit-result {
-  font-size: 0.20rem;
+  top: 0.2rem;
+  font-size: 0.14rem;
 }

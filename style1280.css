@@ -76,5 +76,6 @@ body {
   color: #E7ECEF;
 }
 .submit-result {
-  font-size: 60px;
+  top: 60px;
+  font-size: 20px;
 }

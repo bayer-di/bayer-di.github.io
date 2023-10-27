@@ -41,7 +41,7 @@
         success: res => {
           resultEle.show()
           resultEle.text('Thank you for contacting us.')
-          resultEle.css({ background: '#27ab5c' });
+          resultEle.css({ color: '#27ab5c' });
           setTimeout(() => {
             resultEle.hide()
           }, 2000)
@@ -49,7 +49,7 @@
         error: () => {
           resultEle.show()
           resultEle.text('failed, please try again!')
-          resultEle.css({ background: '#eb5757' });
+          resultEle.css({ color: '#eb5757' });
           setTimeout(() => {
             resultEle.hide()
           }, 2000)
