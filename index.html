@@ -1,61 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>COSMOS-The Possibilities of Agri-tech</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="style390.css" media="screen and (max-width: 1280px)">
-  <link rel="stylesheet" href="style1280.css" media="screen and (min-width: 1280px)">
-  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
-</head>
-<body>
-  <div class="cosmos">
-    <div class="header"></div>
-    <div class="title">
-      Farming intelligence for productivity, scalability, and sustainability.
-    </div>
-    <div class="desc">Coming soon...</div>
-    <input type="email" placeholder="Your email address" name="email" class="email">
-    <button class="submit-email">Notify me when COSMOS is ready</button>
-    <div class="pic"></div>
-    <div class="footer">
-      <div class="footer-contact">Contact</div>
-      <a class="footer-email" href="mailto:shaun.he@cosmos.ag">shaun.he@cosmos.ag</a>
-      <div class="footer-copyright">Copyright ©2024. COSMOS Ag</div>
-    </div>
-    <div class="submit-result" id="result"></div>
-  </div>
-
-  <script>
-    const resultEle = $('#result')
-    $('.submit-email').on('click', () => {
-      const email = $('input[name="email"]').val()
-      $.ajax({
-        type: 'post',
-        url: "https://test.cosmos-ag.com/fuxi/rtk/mail",
-        async: true,
-        contentType: "application/json",
-        dataType: "json",
-        data: JSON.stringify({mail: email}),
-        success: res => {
-          resultEle.show()
-          resultEle.text('Thank you for contacting us.')
-          resultEle.css({ color: '#27ab5c' });
-          setTimeout(() => {
-            resultEle.hide()
-          }, 2000)
-        },
-        error: () => {
-          resultEle.show()
-          resultEle.text('failed, please try again!')
-          resultEle.css({ color: '#eb5757' });
-          setTimeout(() => {
-            resultEle.hide()
-          }, 2000)
-        },
-      })
-    })
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>COSMOS - Explore The Infinite Possibility Of Agriculture</title>
+    <script type="module" crossorigin src="https://fe-statics.cosmos-ag.com/cosmos-ag/master/assets/index.DS52R2Cx.js"></script>
+    <link rel="modulepreload" crossorigin href="https://fe-statics.cosmos-ag.com/cosmos-ag/master/assets/i18n.D4xWHsrN.js">
+    <link rel="modulepreload" crossorigin href="https://fe-statics.cosmos-ag.com/cosmos-ag/master/assets/antd.KqEFYcqA.js">
+    <link rel="stylesheet" crossorigin href="https://fe-statics.cosmos-ag.com/cosmos-ag/master/assets/index.CnnPFFGS.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
