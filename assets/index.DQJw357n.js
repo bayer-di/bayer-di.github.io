@@ -1,0 +1,2 @@
+import{j as a}from"./index.BpHw1Dco.js";const g=({children:s,decoration:e,decorationHeight:o,decorationPosition:r="top",className:n})=>{const t=["page-background",n].filter(Boolean).join(" "),c=o?{"--page-background-decoration-height":`${o}px`}:{};return a.jsxs("div",{className:t,style:c,children:[a.jsx("div",{className:"page-background__content",children:s}),e&&a.jsx("div",{className:`page-background__decoration page-background__decoration--${r}`,style:{backgroundImage:`url(${e})`},"aria-hidden":!0})]})};export{g as P};
+//# sourceMappingURL=index.DQJw357n.js.map
