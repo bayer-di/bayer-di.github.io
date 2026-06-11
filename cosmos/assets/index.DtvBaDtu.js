@@ -1,2 +1,0 @@
-import{j as o,L as n}from"./index.B8f-I_Qj.js";import{u as c}from"./i18n.BL0Fmfax.js";import"./vendor.Dqf5Cpfr.js";const e=()=>{const{t:s}=c();return o.jsxs("div",{className:"coming-soon",children:[o.jsx("h1",{className:"coming-soon__title",children:s("comingSoon.title")}),o.jsx("p",{className:"coming-soon__desc",children:s("comingSoon.desc")}),o.jsx(n,{to:"/",className:"coming-soon__back",children:s("comingSoon.back")})]})};export{e as default};
-//# sourceMappingURL=index.DtvBaDtu.js.map
